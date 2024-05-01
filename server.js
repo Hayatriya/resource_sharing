@@ -7,7 +7,7 @@ app.use(express.json());
 // Enable CORS
 // Enable CORS
 app.use(function(req, res, next) {
-    const allowedOrigins = ['https://hayatriya.github.io', 'http://localhost:3000']; // Add other origins as needed
+    const allowedOrigins = ['https://hayatriya.github.io']; // Add other origins as needed
     const origin = req.headers.origin;
     if (allowedOrigins.includes(origin)) {
         res.header("Access-Control-Allow-Origin", origin);
