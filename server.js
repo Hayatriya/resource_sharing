@@ -21,8 +21,11 @@ app.use(function(req, res, next) {
 
 // Mock user data
 const users = [
-    { id: 1, name: 'John Doe', email: 'john@example.com', password: 'password1', apiKey: '123456' },
-    { id: 2, name: 'Jane Doe', email: 'jane@example.com', password: 'password2', apiKey: 'abcdef' }
+    { id: 1, name: 'admin', email: 'admin@example.com', password: 'admin', apiKey: '123456' },
+    { id: 2, name: 'jaddu', email: 'qwert@example.com', password: 'password2', apiKey: 'abcdef' },
+    { id: 3, name: 'riya', email: 'asdf@example.com', password: 'password3', apiKey: 'abcdef' },
+    { id: 4, name: 'hayat', email: 'hayat@example.com', password: 'password4', apiKey: 'abcdef' },
+    { id: 5, name: 'nk', email: 'nk@example.com', password: 'password5', apiKey: 'abcdef' }
 ];
 
 app.get('/user/:id', (req, res) => {
